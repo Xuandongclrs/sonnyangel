@@ -1,0 +1,47 @@
+/* Background color for the whole page */
+body {
+    background-color: #690411; /* soft pink */
+    
+    font-family: Playfair Display, sans-serif;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+/* Heading style */
+h1 {
+    color: #d6336c; /* deep rose color */
+    font-size: 3em;
+    margin-bottom: 20px;
+        text-shadow:
+        0 0 5px #ff4d6d,
+        0 0 10px #ff4d6d,
+        0 0 20px #ff1a4d,
+        0 0 40px #ff1a4d;
+
+    animation: glowText 2s ease-in-out infinite alternate;
+}
+
+/* Paragraph style */
+p {
+    color: #a83250; /* darker rose color */
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* Rose image style */
+img {
+    width: 300px;
+    border-radius: 15px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Glow animation */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #ff4d6d;
+    }
+    to {
+        box-shadow: 0 0 30px #ff1a4d, 0 0 50px #ff1a4d;
+    }
+}
